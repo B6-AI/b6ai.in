@@ -78,7 +78,7 @@ function renderExtensions() {
     if (!grid) return;
 
     grid.innerHTML = extensionsData.map(ext => `
-        < div class="card" >
+        <div class="card">
             <div>
                 <div class="card-header">
                     <div class="card-logo">
@@ -95,8 +95,8 @@ function renderExtensions() {
             <div class="card-actions">
                 <button class="btn btn-primary" onclick="window.open('${ext.agentLink}', '_blank')">Take me to Extension</button>
             </div>
-        </div >
-        `).join('');
+        </div>
+    `).join('');
 }
 
 function initLogoCarousel() {
@@ -106,9 +106,9 @@ function initLogoCarousel() {
     // Create card elements
     const carouselAgents = agentsData.filter(agent => !agent.badge);
     stack.innerHTML = carouselAgents.map((agent, index) => `
-        < div class="stack-card ${index === 0 ? 'active' : 'waiting'}" style = "z-index: ${carouselAgents.length - index}" >
+        <div class="stack-card ${index === 0 ? 'active' : 'waiting'}" style="z-index: ${carouselAgents.length - index}">
             <img src="${agent.logo}" alt="${agent.name}">
-            </div>
+        </div>
     `).join('');
 
     const cards = stack.querySelectorAll('.stack-card');
@@ -187,10 +187,10 @@ function initConnectPage() {
             const email = document.getElementById('connectEmail').value;
             const reason = document.getElementById('connectReason').value;
 
-            const subject = encodeURIComponent(`Connect: ${name} `);
-            const body = encodeURIComponent(`Name: ${name} \nEmail: ${email} \n\nReason: \n${reason} `);
+            const subject = encodeURIComponent(`Connect: ${name}`);
+            const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nReason:\n${reason}`);
 
-            window.location.href = `mailto:b6aisolutions @gmail.com?subject = ${subject}& body=${body} `;
+            window.location.href = `mailto:b6aisolutions@gmail.com?subject=${subject}&body=${body}`;
         });
     }
 
@@ -201,10 +201,10 @@ function initConnectPage() {
             const description = document.getElementById('bugDescription').value;
             // Screenshot cannot be attached via mailto
 
-            const subject = encodeURIComponent(`Bug Report: ${agent} `);
-            const body = encodeURIComponent(`Agent: ${agent} \n\nDescription: \n${description} \n\n[Please attach your screenshot manually if you have one]`);
+            const subject = encodeURIComponent(`Bug Report: ${agent}`);
+            const body = encodeURIComponent(`Agent: ${agent}\n\nDescription:\n${description}\n\n[Please attach your screenshot manually if you have one]`);
 
-            window.location.href = `mailto:b6aisolutions @gmail.com?subject = ${subject}& body=${body} `;
+            window.location.href = `mailto:b6aisolutions@gmail.com?subject=${subject}&body=${body}`;
         });
     }
 }
