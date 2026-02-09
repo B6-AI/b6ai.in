@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B6 AI Solutions | Enhance productivity with AI</title>
+    <title>Extensions | B6 AI Solutions</title>
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,27 +14,19 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
-<body class="homepage-body">
-    <!-- Preloader -->
-    <div id="preloader">
-        <img src="assets/loader.png" alt="Loading...">
-    </div>
+<body>
 
     <header>
         <nav>
             <div class="logo">
                 <a href="index.html"><img src="assets/logo.png" alt="B6 AI"></a>
             </div>
-
-            <!-- Desktop Links -->
-            <ul class="nav-links desktop-only">
+            <ul class="nav-links">
                 <li><a href="products.html">AI Agents</a></li>
-                <li><a href="extensions.html">Extensions</a></li>
+                <li><a href="extensions.html" class="active">Extensions</a></li>
                 <li><a href="blogs.html">Blogs</a></li>
                 <li><a href="contact.html">Connect</a></li>
             </ul>
-
-            <!-- Hamburger Trigger -->
             <div class="hamburger">
                 <div class="line1"></div>
                 <div class="line2"></div>
@@ -42,48 +34,67 @@
             </div>
         </nav>
 
-        <!-- Mobile Menu Overlay (Hidden by default) -->
+        <!-- Mobile Menu Overlay -->
         <div class="mobile-menu-overlay">
             <div class="mobile-menu-header">
                 <div class="logo-mobile">
                     <img src="assets/logo.png" alt="B6 AI">
                 </div>
                 <div class="close-menu">
-                    &times; <!-- X icon -->
+                    &times;
                 </div>
             </div>
 
             <ul class="mobile-nav-links">
                 <li><a href="products.html">AI Agents</a></li>
-                <li><a href="extensions.html">Extensions</a></li>
+                <li><a href="extensions.html" class="active">Extensions</a></li>
                 <li><a href="blogs.html">Blogs</a></li>
                 <li><a href="contact.html">Connect</a></li>
             </ul>
-
-
         </div>
     </header>
 
-    <main class="homepage-main">
-        <div class="hero-content">
-            <!-- Logo Stack Carousel -->
-            <div class="logo-stack" id="logoStack">
-                <!-- Dynamically populated by app.js -->
-            </div>
-
-            <h1 class="hero-headline">Enhance productivity with <span class="text-desktop">Artificial
-                    Intelligence</span><span class="text-mobile">AI</span></h1>
-            <p class="hero-subheadline">Discovering, Developing and Deploying AI Agents everyday, find yours now.
+    <div class="page-wrapper">
+        <div class="grid-header">
+            <h1>Explore our Chromium Based Extensions</h1>
+            <p style="color: var(--text-secondary); margin-top: 10px;">Select an extension to upgrade your productivity.
             </p>
+        </div>
 
-            <div class="button-group">
-                <a href="products.html" class="btn btn-primary">Our AI Agents</a>
-                <a href="contact.html" class="btn btn-secondary">Connect</a>
+        <div class="grid-container" id="extensionsGrid">
+            <!-- Dynamically populated by app.js -->
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="logo">
+                    <img src="assets/logo.png" alt="B6 AI" style="opacity: 0.7;">
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Menu</h4>
+                <ul>
+                    <li><a href="products.html">AI Agents</a></li>
+                    <li><a href="extensions.html">Extensions</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="contact.html">Connect</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Our Contributors</h4>
+                <ul>
+                    <li>Global Community</li>
+                    <li>Open Source</li>
+                </ul>
             </div>
         </div>
-    </main>
-
-    <!-- Footer intentionally omitted for Single Frame layout as requested -->
+        <div
+            style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #333; font-size: 0.8rem; color: #555;">
+            &copy; 2026 B6 AI Solutions.
+        </div>
+    </footer>
 
     <script src="scripts/data.js?v=2"></script>
     <script src="scripts/app.js?v=2"></script>
