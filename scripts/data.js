@@ -49,3 +49,17 @@ const agentsData = [
         ]
     }
 ];
+
+const extensionsData = [
+    {
+        id: 'yt-shorts-blocker',
+        name: 'YouTube Shorts Blocker for Mobile',
+        logo: 'assets/logos/Extension_YT_Shorts_Blocker.png',
+        agentLink: 'https://chromewebstore.google.com/detail/jllhdcdkmmndpheeifhcgjlhdkaghpop/preview?hl=en-GB&authuser=0',
+        features: [
+            'Enhance concentration',
+            'Blocks YouTube Shorts',
+            'Specialised for use in mobile devices'
+        ]
+    }
+];

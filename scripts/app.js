@@ -40,6 +40,9 @@ window.addEventListener('DOMContentLoaded', () => {
         renderProducts();
         initLogoCarousel();
     }
+    if (typeof extensionsData !== 'undefined') {
+        renderExtensions();
+    }
 });
 
 function renderProducts() {
@@ -65,6 +68,32 @@ function renderProducts() {
             <div class="card-actions">
                 <button class="btn btn-primary" onclick="${agent.agentLink ? `window.open('${agent.agentLink}', '_blank')` : `alert('Coming Soon!')`}">Take me to Agent</button>
                 <button class="btn btn-secondary" onclick="${agent.customLink ? `window.open('${agent.customLink}', '_blank')` : `alert('Contacting...')`}">Get it customised for you</button>
+            </div>
+        </div>
+    `).join('');
+}
+
+function renderExtensions() {
+    const grid = document.getElementById('extensionsGrid');
+    if (!grid) return;
+
+    grid.innerHTML = extensionsData.map(ext => `
+        <div class="card">
+            <div>
+                <div class="card-header">
+                    <div class="card-logo">
+                        <img src="${ext.logo}" alt="${ext.name}" style="width: 100%; height: 100%; object-fit: contain;">
+                    </div>
+                    <h3 class="card-title">${ext.name}</h3>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        ${ext.features.map(f => `<li>${f}</li>`).join('')}
+                    </ul>
+                </div>
+            </div>
+            <div class="card-actions">
+                <button class="btn btn-primary" onclick="window.open('${ext.agentLink}', '_blank')">Take me to Extension</button>
             </div>
         </div>
     `).join('');
