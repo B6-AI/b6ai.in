@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B6 AI Solutions | Enhance productivity with AI</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body class="homepage-body">
+    <!-- Preloader -->
+    <div id="preloader">
+        <img src="assets/loader.png" alt="Loading...">
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="assets/logo.png" alt="B6 AI"></a>
+            </div>
+
+            <!-- Desktop Links -->
+            <ul class="nav-links desktop-only">
+                <li><a href="products.html">AI Agents</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="contact.html">Connect</a></li>
+            </ul>
+
+            <!-- Hamburger Trigger -->
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu Overlay (Hidden by default) -->
+        <div class="mobile-menu-overlay">
+            <div class="mobile-menu-header">
+                <div class="logo-mobile">
+                    <img src="assets/logo.png" alt="B6 AI">
+                </div>
+                <div class="close-menu">
+                    &times; <!-- X icon -->
+                </div>
+            </div>
+
+            <ul class="mobile-nav-links">
+                <li><a href="products.html">AI Agents</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="contact.html">Connect</a></li>
+            </ul>
+
+
+        </div>
+    </header>
+
+    <main class="homepage-main">
+        <div class="hero-content">
+            <!-- Logo Stack Carousel -->
+            <div class="logo-stack" id="logoStack">
+                <!-- Dynamically populated by app.js -->
+            </div>
+
+            <h1 class="hero-headline">Enhance productivity with <span class="text-desktop">Artificial
+                    Intelligence</span><span class="text-mobile">AI</span></h1>
+            <p class="hero-subheadline">Discovering, Developing and Deploying AI Agents everyday, find yours now.
+            </p>
+
+            <div class="button-group">
+                <a href="products.html" class="btn btn-primary">Our AI Agents</a>
+                <a href="contact.html" class="btn btn-secondary">Connect</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer intentionally omitted for Single Frame layout as requested -->
+
+    <script src="scripts/data.js?v=2"></script>
+    <script src="scripts/app.js?v=2"></script>
+</body>
+
+</html>
