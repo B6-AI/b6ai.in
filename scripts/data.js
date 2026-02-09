@@ -3,7 +3,8 @@ const agentsData = [
         id: 'auto-blogger',
         name: 'BlogAssist',
         logo: 'assets/logos/AssistiveBlog.png',
-        customLink: 'https://www.fiverr.com/s/KeGDX3b',
+        agentLink: 'https://blogassist.streamlit.app/',
+        customLink: 'https://blogassist.streamlit.app/',
         features: [
             'Automated niche research',
             'Writes SEO-optimized posts',
@@ -16,6 +17,7 @@ const agentsData = [
         name: 'HireUltra',
         logo: 'assets/logos/HireUltra.png',
         agentLink: 'https://hireultra.streamlit.app/',
+        customLink: 'https://hireultra.streamlit.app/',
         features: [
             'Automated candidate sourcing',
             'Smart Resume Parsing',
